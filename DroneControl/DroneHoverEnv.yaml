@@ -1,0 +1,24 @@
+DroneHoverEnv:
+  trainer: ppo
+  batch_size: 1024
+  beta: 5.0e-3
+  buffer_size: 10240
+  epsilon: 0.2
+  hidden_units: 128
+  keep_checkpoints: 5
+  lambd: 0.95
+  learning_rate: 1.0e-4
+  learning_rate_schedule: linear
+  max_steps: 500000
+  memory_size: 128
+  normalize: true
+  num_epoch: 3
+  num_layers: 2
+  time_horizon: 128
+  summary_freq: 10000
+  use_recurrent: false
+  sequence_length: 64
+  reward_signals:
+    extrinsic:
+      strength: 1.0
+      gamma: 0.995
