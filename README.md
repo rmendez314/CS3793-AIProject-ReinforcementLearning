@@ -47,9 +47,8 @@ actor-critic (SAC), and Deep Q-learning (DQL). In most modern
 implementations, a neural network is incorporated to help approximate a
 reward function that will build an effective policy pi(A\|S), as shown
 in the following figure.
-
-![](media/image1.png){width="3.724562554680665in"
-height="2.377380796150481in"}
+    
+<img width="268" alt="image" src="https://user-images.githubusercontent.com/90067776/169124055-2c27701b-eae3-4640-8c32-c2bbf644d122.png">
 
 Figure: Deep Neural Networks in Reinforcement Learning
 
