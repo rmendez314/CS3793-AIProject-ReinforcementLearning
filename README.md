@@ -1,8 +1,9 @@
 # CS3793-AIProject-ReinforcementLearning-Group15
 Artificial Intelligence Project using Reinforcement Learning to build a robot simulated in Unity.
 
-
-**AI Project Final Report**
+<p allign="center">
+    **AI Project Final Report**
+</p>
 
 **Literature Search:**
 
