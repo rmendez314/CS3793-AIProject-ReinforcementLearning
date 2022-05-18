@@ -49,8 +49,9 @@ reward function that will build an effective policy pi(A\|S), as shown
 in the following figure.
 <p align= "center">
     <img width="268" alt="image" src="https://user-images.githubusercontent.com/90067776/169124055-2c27701b-eae3-4640-8c32-c2bbf644d122.png">
+    Figure: Deep Neural Networks in Reinforcement Learning
 </p>
-Figure: Deep Neural Networks in Reinforcement Learning
+
 
 These methods will be tested with the selected application and compared
 based on their ability to consistently produce a reliable and effective
@@ -59,8 +60,9 @@ and studied for the best overall method, including the learning rate and
 target network update rate, as shown in the figure below.
 <p align= "center">
     <img width="273" alt="image" src="https://user-images.githubusercontent.com/90067776/169124809-891194c5-22b2-4fae-9c0d-a7fa6f45ba5e.png">
+    Figure: ML-Agents Reinforcement Learning Configuration Parameters
 </p>
-Figure: ML-Agents Reinforcement Learning Configuration Parameters
+
 
 **Experimental Setup:** *Describe the experimental setup by listing
 which metrics and datasets will be used for evaluation.*
