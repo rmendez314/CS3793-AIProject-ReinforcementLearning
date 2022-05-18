@@ -7,7 +7,7 @@ Artificial Intelligence Project using Reinforcement Learning to build a robot si
 
 **Literature Search:**
 
-    For this project, the group has decided to focus on implementing
+\tFor this project, the group has decided to focus on implementing
 reinforcement learning within Unity's \[1\] 3D simulation environment.
 This game development platform was selected because of its available
 content for implementing custom reinforcement learning algorithms using
