@@ -47,9 +47,9 @@ actor-critic (SAC), and Deep Q-learning (DQL). In most modern
 implementations, a neural network is incorporated to help approximate a
 reward function that will build an effective policy pi(A\|S), as shown
 in the following figure.
-    
-<img width="268" alt="image" src="https://user-images.githubusercontent.com/90067776/169124055-2c27701b-eae3-4640-8c32-c2bbf644d122.png">
-
+<p align= "center">
+    <img width="268" alt="image" src="https://user-images.githubusercontent.com/90067776/169124055-2c27701b-eae3-4640-8c32-c2bbf644d122.png">
+</p>
 Figure: Deep Neural Networks in Reinforcement Learning
 
 These methods will be tested with the selected application and compared
@@ -57,9 +57,9 @@ based on their ability to consistently produce a reliable and effective
 policy after training. Additionally, some parameters will be modified
 and studied for the best overall method, including the learning rate and
 target network update rate, as shown in the figure below.
-
-![](media/image2.jpg){width="3.7916666666666665in" height="3.125in"}
-
+<p align= "center">
+    <img width="273" alt="image" src="https://user-images.githubusercontent.com/90067776/169124809-891194c5-22b2-4fae-9c0d-a7fa6f45ba5e.png">
+</p>
 Figure: ML-Agents Reinforcement Learning Configuration Parameters
 
 **Experimental Setup:** *Describe the experimental setup by listing
