@@ -272,7 +272,7 @@ modification / extension of the best method may be applied.
 methods will be hosted. Add me to the repo -
 [[https://github.com/kevinpdesai]{.underline}](https://github.com/kevinpdesai)*
 
-**References**
+### **References**
 
 \[1\] https://docs.unity3d.com/Manual/UnityManual.html
 
