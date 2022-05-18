@@ -3,11 +3,11 @@ Artificial Intelligence Project using Reinforcement Learning to build a robot si
 
 <p align="center">
     AI Project Final Report
-</p>
+
 
 **Literature Search:**
 
-\tFor this project, the group has decided to focus on implementing
+For this project, the group has decided to focus on implementing
 reinforcement learning within Unity's \[1\] 3D simulation environment.
 This game development platform was selected because of its available
 content for implementing custom reinforcement learning algorithms using
@@ -17,7 +17,7 @@ open-source tool for developing AI agents. There are several example
 environments \[3\] that demonstrate the wide range of reinforcement
 learning applications that can be constructed.
 
-    Having decided on a particular software and selecting the ML-agents
+Having decided on a particular software and selecting the ML-agents
 Unity asset package as a primary resource, a decision was made about
 whether to create a reinforcement learning application for a real-world
 task or for a video game AI. The group preferred the former, and
@@ -317,3 +317,4 @@ arXiv:1809.02627.
 \[13\] https://unitylist.com/p/1252/AI-Drone-Unity-Simulation
 
 \[14\]
+</p>
