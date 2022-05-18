@@ -7,7 +7,7 @@ Artificial Intelligence Project using Reinforcement Learning to build a robot si
 
 **Literature Search:**
 
-For this project, the group has decided to focus on implementing
+    For this project, the group has decided to focus on implementing
 reinforcement learning within Unity's \[1\] 3D simulation environment.
 This game development platform was selected because of its available
 content for implementing custom reinforcement learning algorithms using
@@ -17,7 +17,7 @@ open-source tool for developing AI agents. There are several example
 environments \[3\] that demonstrate the wide range of reinforcement
 learning applications that can be constructed.
 
-Having decided on a particular software and selecting the ML-agents
+    Having decided on a particular software and selecting the ML-agents
 Unity asset package as a primary resource, a decision was made about
 whether to create a reinforcement learning application for a real-world
 task or for a video game AI. The group preferred the former, and
@@ -31,7 +31,7 @@ of the work done in \[6\] within Unity.
 **Problem Statement:** *Clearly state the research problem that is being
 addressed.*
 
-Similar to the objective described in \[6\], this project aims to
+    Similar to the objective described in \[6\], this project aims to
 control a quadrotor drone for stabilization and navigation by using
 reinforcement learning. This will be developed entirely in simulation,
 however in the final presentation an outline of how this can be applied
@@ -41,7 +41,7 @@ to a physical system will be included.
 that will be explored. This does not have to be the final list or a
 detailed review.*
 
-The example environments in \[3\] utilize many default reinforcement
+    The example environments in \[3\] utilize many default reinforcement
 learning algorithms, including proximal policy optimization (PPO), soft
 actor-critic (SAC), and Deep Q-learning (DQL). In most modern
 implementations, a neural network is incorporated to help approximate a
@@ -53,7 +53,7 @@ height="2.377380796150481in"}
 
 Figure: Deep Neural Networks in Reinforcement Learning
 
-These methods will be tested with the selected application and compared
+    These methods will be tested with the selected application and compared
 based on their ability to consistently produce a reliable and effective
 policy after training. Additionally, some parameters will be modified
 and studied for the best overall method, including the learning rate and
@@ -66,7 +66,7 @@ Figure: ML-Agents Reinforcement Learning Configuration Parameters
 **Experimental Setup:** *Describe the experimental setup by listing
 which metrics and datasets will be used for evaluation.*
 
-First and foremost, a custom simulation training environment will be
+    First and foremost, a custom simulation training environment will be
 constructed in Unity for implementing reinforcement learning with the
 chosen application. After configuring the GameObject blocks and
 necessary components to train a network throughout the learning process,
@@ -126,13 +126,13 @@ with ml-agents:
 3)  Add the agent's subclasses to the GameObject representing the agent
     model in simulation.
 
-During each episode of training, if the agent (drone) achieves its goal
+    During each episode of training, if the agent (drone) achieves its goal
 (reaching a destination cube), falls off the map / crashes, or reaches
 the time limit, the episode terminates and the goal is relocated to a
 new random position. The scene is then randomized to promote learning in
 a variety of conditions.
 
-A reference to the Rigidbody component of the agent is needed to reset
+    A reference to the Rigidbody component of the agent is needed to reset
 the agent's velocity and apply actions (forces) to its actuators. There
 are therefore 4 continuous actions, a force applied to each thruster of
 the quadcopter. The observations made by the agent's sensors are sent to
@@ -196,36 +196,36 @@ The agent model needs the following essential components (scripts):
 Summary frequency \[10000\]: number of experiences to be collected
 before generating training statistics (viewed in Tensorboard).
 
-Time horizon \[128\]: how many steps to collect per-agent before adding
+    Time horizon \[128\]: how many steps to collect per-agent before adding
 it to the experience buffer. Shorter -\> more biased, less varied value
 estimate. More ideal for very large episodes, or if there are frequent
 rewards within an episode. Should be large enough to capture the
 important behaviors within an action sequence.
 
-Learning rate \[0.0001\]: initial learning rate (strength) for gradient
+    Learning rate \[0.0001\]: initial learning rate (strength) for gradient
 descent updates. Should be decreased if training is unstable and the
 reward does not consistently increase.
 
-Batch size (Continuous PPO: \[1024\]): number of experiences in each
+    Batch size (Continuous PPO: \[1024\]): number of experiences in each
 gradient descent iteration. Should always be a smaller multiple of the
 buffer size. Should be larger for continuous actions.
 
-Buffer size \[10240\]: for PPO, the number of experiences to collect
+    Buffer size \[10240\]: for PPO, the number of experiences to collect
 before updating the policy.
 
-Learning Rate Schedule \[PPO: linear\]: how learning rate changes over
+    Learning Rate Schedule \[PPO: linear\]: how learning rate changes over
 time. Learning converges more stably when decaying until max_steps for
 PPO.
 
-Hidden units \[128\]: how many units in each fully connected layer.
+    Hidden units \[128\]: how many units in each fully connected layer.
 Should be larger when the actions taken have a complex interaction
 between the observations.
 
-Number of layers \[2\]: number of hidden layers present after the
+    Number of layers \[2\]: number of hidden layers present after the
 observation input or CNN encoding of a visual observation. Fewer layers
 can be used for simpler problems to train fast & efficiently.
 
-Normalize \[true\]: whether normalization is applied to the vector
+    Normalize \[true\]: whether normalization is applied to the vector
 observation inputs. Can be helpful for complex continuous control
 problems.
 
